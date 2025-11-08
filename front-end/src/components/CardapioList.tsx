@@ -3,9 +3,9 @@ import CardapioItem from "./CardapioItem";
 const CardapioList = () => {
   return (
     <>
-      <h2 className="text-5xl font-black text-primary mt-10 mb-4 mx-3">Lista de Burgers</h2>
+      <h2 className="text-5xl font-black text-primary mt-10 mb-4">Lista de Burgers</h2>
       
-      <div className="p-4 bg-dark-gray2 rounded-md max-w-md mx-3 mb-30">
+      <div className="p-4 bg-dark-gray2 rounded-md max-w-md mb-30">
         <ul>
           <li>
             <CardapioItem
