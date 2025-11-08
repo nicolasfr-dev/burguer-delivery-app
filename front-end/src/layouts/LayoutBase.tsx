@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 const LayoutBase = () => {
     return ( 
         <>  
-        <main className="bg-dark-gray min-h-screen w-full py-3">
+        <main className="bg-dark-gray min-h-screen w-full px-5 py-5">
             <Outlet />
             <NavBar />
         </main>
