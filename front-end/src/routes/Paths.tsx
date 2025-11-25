@@ -1,23 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CarrinhoPage from "../pages/CarrinhoPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LayoutBase from "../layouts/LayoutBase";
 import MainPage from "../pages/MainPage";
 import PedidosPage from "../pages/PedidosPage";
+import CarrinhoPage from "../pages/CarrinhoPage";
 
-const Paths = () => {
-    return ( 
-        <>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LayoutBase />}>
-                    <Route index element={<MainPage />} />
-                    <Route path="pedidos" element={<PedidosPage />} />
-                    <Route path="carrinho" element={<CarrinhoPage />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-        </>
-     );
+export default function AppRoutes() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<LayoutBase />}>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/pedidos" element={<PedidosPage />} />
+          <Route path="/carrinho" element={<CarrinhoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
- 
-export default Paths;
