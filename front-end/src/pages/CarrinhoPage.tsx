@@ -81,8 +81,12 @@ const CarrinhoPage = () => {
           <div className="mt-6 flex justify-between items-center">
             <h2 className="text-xl text-white font-bold">Total:</h2>
             <span className="text-2xl font-extrabold text-primary">
-              R$ {moeda(total)}
+              R$ {moeda(total)} + Frete
             </span>
+          </div>
+
+          <div>
+            <span className="text-zinc-500">O frete, assim como a forma de pagamento, será combinado via WhatsApp após a confirmação do pedido.</span>
           </div>
 
           <button
