@@ -56,7 +56,7 @@ const CarrinhoPage = () => {
         `*Observações:* ${observacao || "Nenhuma"}`
     );
 
-    const whatsappURL = `https://wa.me/5500000000000?text=${msg}`;
+    const whatsappURL = `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}?text=${msg}`;
     window.open(whatsappURL, "_blank");
 
     // limpar carrinho 

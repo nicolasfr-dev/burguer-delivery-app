@@ -1,7 +1,9 @@
+import logo from "../../assets/logo.png";
+
 const Logo = () => {
-    return ( 
+    return (
         <>
-        <img src="src/assets/logo.png" alt="Burguer Delivery Logo" className="object-fill" width={80} height={80} />
+        <img src={logo} alt="Burguer Delivery Logo" className="object-fill invert" width={56} height={56} />
         </>
      );
 }
